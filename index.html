@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+            <meta charset="UTF-8" name="Janavi Anand">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>background</title>
+            <link rel="stylesheet" href="background.css">
+            <!-- the MAIN.CSS file is linked here -->
+          </head>
+    <body>
+        <div >
+            
+            
+            <div id="cssHead" class="cssHeadRotate">
+                <div class="popup">
+                        <span class="popuptext" id="myPopup"></span>
+                </div>
+                <div class="cssEye leftEye">
+                    <div class="cssEyeLid">
+                        <div class="cssPupil">
+                        </div>
+                    </div>
+                </div>
+                <div class="cssEye rightEye">
+                    <div class="cssEyeLid">
+                        <div class="cssPupil">						
+                        </div>
+                    </div>
+                </div>
+                <div class="cssMouth" id="mouth">
+                </div>			
+            </div>
+            
+            
+
+            <div id='game'>
+                <h1>My Guessing Game</h1>
+                <h3>Previous Guesses</h3>
+                <ul id='guessesMade'>
+                    
+                </ul>
+                <p id='guessCount'>You have 6 guesses.</p>
+                <input type="number" placeholder="enter your guess" id='guesses' min='1' max='100'>
+                <button id='submit' type='button'>Submit Guess</button>
+                <button id='playAgain' type='button'>Play Again</button>
+                <button type='button' id='hint'>Hint</button>
+                <p id='message'></p>
+            </div>
+            
+        </div>
+
+
+
+
+    
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+  
+                
+            
+        
+        <script src='game.js'></script>
+        
+    </body>
+</html>

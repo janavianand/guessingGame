@@ -1,0 +1,345 @@
+body{
+    /* background-color: hsla(287, 27%, 35%, 1); */
+    background-image: radial-gradient(circle,  rgb(224, 210, 228), hsla(287, 27%, 45%, 1));
+}
+
+/* #circle{
+    border-radius: 50%;
+    /* background: hsl(54, 91%, 70%); */
+    /* background-image: radial-gradient(circle, hsla(54, 83%, 55%), hsl(54, 56%, 55%,1));
+    position: fixed;
+    bottom: 70px;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 10px hsla(0, 0%, 48%,1);
+} */ 
+
+#cssHead {
+    position: fixed;
+    bottom: 300px;
+    left: 200px;
+	margin: 20px auto;
+	width: 180px;
+	/* background-color: #fff; */
+	background-color: hsla(60, 100%, 75%,1);
+	height: 180px;
+	-webkit-border-radius: 500px;
+	border-radius: 500px;
+	border: 3px solid rgb(88, 80, 73);
+	-moz-transform: rotate(-2deg) skew(-3deg, -2deg);
+	-webkit-transform: rotate(-2deg) skew(-3deg, -2deg);
+	-o-transform: rotate(-2deg) skew(-3deg, -2deg);
+	-ms-transform: rotate(-2deg) skew(-3deg, -2deg);
+    transform: rotate(-2deg) skew(-3deg, -2deg);
+    box-shadow: 10px 10px 10px hsla(0, 0%, 48%,1);
+}
+.cssEye {
+	display: inline-block;
+}
+.cssPupil {
+	width: 12px;
+	background: rgb(88, 80, 73);
+	height: 12px;
+	margin: 6px 0px 3px 8px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+.cssEyeLid {
+  border: 1px solid rgb(88, 80, 73);
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  margin: 0;
+}
+.htmlEye {
+  border: 1px solid rgb(88, 80, 73);
+  display: inline-block;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+.wraphtmlEye {
+	background-color: #DDD;
+	margin: 6px;
+	padding: 4px;
+	width: 25px;
+	height: 25px;
+}
+ .htmlPupil {
+  width: 12px;
+  background: rgb(88, 80, 73);
+  height: 12px;
+  margin: 6px 4px 3px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+} 
+.rightEye {
+	margin: 0;
+}
+.leftEye {
+	margin: 50px 4px 0px 66px;
+}
+.cssMouth {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 4px solid #000;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  height: 20px;
+  width: 45px;
+  margin: 0px auto 0;
+}
+.cssMouth1 {
+  border-top: 4px solid rgb(88, 80, 73);
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  height: 30px;
+  width: 45px;
+  margin: 10px auto 0; 
+}
+
+/*CSS head animation BEGIN*/
+.cssHeadRotate {
+	-webkit-animation: headRotations 10s infinite;
+	animation: headRotations 10s infinite;
+	/* transform-origin: 50% 50%;
+	animation: jump .8s linear alternate infinite; */
+} 
+@-webkit-keyframes headRotations {
+	0% {	-webkit-transform: rotate(-2deg) skew(-3deg, -2deg);	}
+	20% {	-webkit-transform: rotate(2deg) skew(-3deg, -2deg);		}
+	25% {	-webkit-transform: rotate(-4deg) skew(-3deg, -2deg);	}
+	28% {	-webkit-transform: rotate(-2deg) skew(-3deg, -2deg);	}
+	40% {	-webkit-transform: rotate(-2deg) skew(-3deg, -2deg);	}
+	50% {	-webkit-transform: rotate(2deg) skew(-3deg, -2deg);		}
+	60% {	-webkit-transform: rotate(-6deg) skew(-3deg, -2deg);	}
+	70% {	-webkit-transform: rotate(6deg) skew(-3deg, -2deg);		}
+	90% {	-webkit-transform: rotate(6deg) skew(-3deg, -2deg);		}
+	100% {	-webkit-transform: rotate(-2deg) skew(-3deg, -2deg);	}
+}
+@keyframes headRotations {
+	0% {	transform: rotate(-2deg) skew(-3deg, -2deg);	}
+	20% {	transform: rotate(2deg) skew(-3deg, -2deg);		}
+	25% {	transform: rotate(-4deg) skew(-3deg, -2deg);	}
+	28% {	transform: rotate(-2deg) skew(-3deg, -2deg);	}
+	40% {	transform: rotate(-2deg) skew(-3deg, -2deg);	}
+	50% {	transform: rotate(2deg) skew(-3deg, -2deg);		}
+	60% {	transform: rotate(-6deg) skew(-3deg, -2deg);	}
+	70% {	transform: rotate(6deg) skew(-3deg, -2deg);		}
+	90% {	transform: rotate(6deg) skew(-3deg, -2deg);		}
+	100% {	transform: rotate(-2deg) skew(-3deg, -2deg);	}
+	
+}
+@keyframes jump {
+	0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+	40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+	100% {transform: translate3d(0,70%,0) scale3d(1.5,.7,1);}
+}
+@-webkit-keyframes jump {
+	0%   {-webkit-transform: translate3d(0,0,0) scale3d(1,1,1);}
+	40%  {-webkit-transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+	100% {-webkit-transform: translate3d(0,70%,0) scale3d(1.5,.7,1);}
+}
+.jump {
+	transform-origin: 50% 50%;
+	animation: jump .5s linear alternate infinite;
+} 
+/*CSS head animation END*/
+/*CSS pupils animation BEGIN*/
+.cssPupil {
+	-webkit-animation: lookingAround 20s infinite;
+	animation: lookingAround 20s infinite;
+}
+@-webkit-keyframes lookingAround {
+	0% {	margin: 6px 0px 3px 8px;	}
+	10% {	margin: 6px 0px 3px 8px;	}
+	12% {	margin: 6px 8px 3px 0px;	}
+	27% {	margin: 6px 8px 3px 0px;	}
+	30% {	margin: 6px 0px 3px 8px;	}
+	40% {	margin: 6px 0px 3px 8px;	}
+	43% {	margin: 1px 0px 8px 8px;	}
+	46% {	margin: 6px 0px 3px 8px;	}
+	57% {	margin: 6px 0px 3px 8px;	}
+	60% {	margin: 6px 8px 3px 0px;	}
+	63% {	margin: 6px 0px 3px 8px;	}
+	77% {	margin: 6px 0px 3px 8px;	}
+	80% {	margin: 6px 4px 3px 4px;	}
+	85% {	margin: 6px 4px 3px 4px;	}
+	88% {	margin: 6px 0px 3px 8px;	}
+	92% {	margin: 6px 0px 3px 8px;	}
+	100% {	margin: 6px 0px 3px 8px;	}
+}
+@keyframes lookingAround {
+	0% {	margin: 6px 0px 3px 8px;	}
+	10% {	margin: 6px 0px 3px 8px;	}
+	12% {	margin: 6px 8px 3px 0px;	}
+	27% {	margin: 6px 8px 3px 0px;	}
+	30% {	margin: 6px 0px 3px 8px;	}
+	40% {	margin: 6px 0px 3px 8px;	}
+	43% {	margin: 1px 0px 8px 8px;	}
+	46% {	margin: 6px 0px 3px 8px;	}
+	57% {	margin: 6px 0px 3px 8px;	}
+	60% {	margin: 6px 8px 3px 0px;	}
+	63% {	margin: 6px 0px 3px 8px;	}
+	77% {	margin: 6px 0px 3px 8px;	}
+	80% {	margin: 6px 4px 3px 4px;	}
+	85% {	margin: 6px 4px 3px 4px;	}
+	88% {	margin: 6px 0px 3px 8px;	}
+	92% {	margin: 6px 0px 3px 8px;	}
+	100% {	margin: 6px 0px 3px 8px;	}
+}
+/*CSS pupils animation END*/
+/*CSS blinking BEGIN*/
+.cssEyeLid {
+	-webkit-animation: blinkingEye 7s infinite;
+	animation: blinkingEye 7s infinite;
+}
+@-webkit-keyframes blinkingEye {
+	0% {	height: 20px;	margin: 0;	}
+	58% {	height: 20px;	margin: 0;	}
+	60% {	height: 0px;	margin: 10px 0;	}
+	66% {	height: 20px;	margin: 0;	}
+	100% {	height: 20px;	margin: 0;	}
+}
+@keyframes blinkingEye {
+	0% {	height: 20px;	margin: 0;	}
+	58% {	height: 20px;	margin: 0;	}
+	60% {	height: 0px;	margin: 10px 0;	}
+	66% {	height: 20px;	margin: 0;	}
+	100% {	height: 20px;	margin: 0;	}
+}
+/*CSS blinking END*/
+/*CSS smiling animation BEGIN*/
+.cssMouth {
+	-webkit-animation: smilingMouth 8s infinite;
+	animation: smilingMouth 8s infinite;
+}
+@-webkit-keyframes smilingMouth {
+	0% {	height: 20px;	border-bottom: 3px solid #000;	margin: 0px auto 0;		}
+	20% {	height: 35px;	border-bottom: 6px solid #000;	margin: -10px auto 0;	}
+	80% {	height: 35px;	border-bottom: 6px solid #000;	margin: -10px auto 0;	}
+	100% {	height: 20px;	border-bottom: 3px solid #000;	margin: 0px auto 0;		} 
+}
+@keyframes smilingMouth {
+	0% {	height: 20px;	border-bottom: 3px solid #000;	margin: 0px auto 0;		}
+	20% {	height: 35px;	border-bottom: 6px solid #000;	margin: -10px auto 0;	}
+	80% {	height: 35px;	border-bottom: 6px solid #000;	margin: -10px auto 0;	}
+	100% {	height: 20px;	border-bottom: 3px solid #000;	margin: 0px auto 0;		}  
+}
+
+.cssMouth1 {
+	-webkit-animation: smilingMouth1 8s infinite;
+	animation: smilingMouth1 8s infinite;
+}
+@-webkit-keyframes smilingMouth1 {
+	0% {	height: 20px;	border-top: 3px solid rgb(88, 80, 73);	margin: 10px auto 0;		}
+	20% {	height: 35px;	border-top: 6px solid rgb(88, 80, 73);	margin: 20px auto 0;	}
+	80% {	height: 35px;	border-top: 6px solid rgb(88, 80, 73);	margin: 20px auto 0;	}
+	100% {	height: 20px;	border-top: 3px solid rgb(88, 80, 73);	margin: 10px auto 0;		} 
+}
+@keyframes smilingMouth1 {
+	0% {	height: 20px;	border-top: 3px solid rgb(88, 80, 73);	margin: 10px auto 0;		}
+	20% {	height: 35px;	border-top: 6px solid rgb(88, 80, 73);	margin: 20px auto 0;	}
+	80% {	height: 35px;	border-top: 6px solid rgb(88, 80, 73);	margin: 20px auto 0;	}
+	100% {	height: 20px;	border-top: 3px solid rgb(88, 80, 73);	margin: 10px auto 0;		}  
+} 
+/*CSS smiling animation END*/
+
+/* Write your CSS code in this file */
+#game{
+	position: fixed;
+    margin-left: 550px;
+    margin-top: 175px;
+    margin-right: 300px;
+    text-align: center;
+    background-color: (rgb(219, 216, 216));
+    padding: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:rgb(88, 80, 73);
+}
+#guesses{
+    width : 130px;
+}
+
+/* popup hint */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	bottom: 75px;
+    right: 5px;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+	
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s; */
+	animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {   
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+  .popup .hide {
+	visibility: hidden;
+	-webkit-animation: fadeOut 1s;
+	animation: fadeOut 1s;
+  }
+  
+  /* Add animation (fade out the popup) */
+  @-webkit-keyframes fadeOut {
+	from {opacity: 1;} 
+	to {opacity: 0;}
+  }
+  
+  @keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
+  }
+
+  
